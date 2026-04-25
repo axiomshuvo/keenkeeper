@@ -61,16 +61,16 @@ Each friend object must have these fields:
 }
 ```
 
-> ⚠️ Use meaningful data. No "lorem ipsum" or fake placeholder text.  
-> The `status` field can only be one of: `"overdue"` | `"almost due"` | `"on-track"`  
-> 💡 You may use an AI tool to help generate the JSON data.
+> ⚠️ Use meaningful data. No "lorem ipsum" or fake placeholder text. - done
+> The `status` field can only be one of: `"overdue"` | `"almost due"` | `"on-track"` - done
+> 💡 You may use an AI tool to help generate the JSON data. - done
 
 ---
 
 ### 4. 👫 Your Friends Section (Home Page)
 
-- Display all friends from your JSON file as cards, following the Figma design
-- **Each card must show:**
+- Display all friends from your JSON file as cards, following the Figma design - done
+- **Each card must show:** - done
 
 | Field                 | Details                                                |
 | --------------------- | ------------------------------------------------------ |
@@ -80,8 +80,8 @@ Each friend object must have these fields:
 | 🏷️ Tags               | e.g., "college", "work"                                |
 | 🔴 Status             | Background color changes based on status (match Figma) |
 
-- Cards must be shown in a **4-column grid layout on large screens**
-- Clicking a card must navigate the user to that friend's **Detail Page**
+- Cards must be shown in a **4-column grid layout on large screens** - done
+- Clicking a card must navigate the user to that friend's **Detail Page** - done
 
 ---
 
