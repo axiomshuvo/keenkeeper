@@ -1,19 +1,11 @@
-"use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
 
-export default function Friends() {
-  const [friends, setFriends] = useState([]);
-
-  useEffect(() => {
-    fetch("/data/friends.json")
-      .then((res) => res.json())
-      .then((data) => {
-        setFriends(data);
-        console.log("Fetched friends data:", data);
-      });
-  }, []);
+export default async function Friends() {
+  const res = await fetch(
+    `${process.env.NEXT_PUBLIC_SITE_URL}/data/friends.json`,
+  );
+  const friends = await res.json();
 
   return (
     <div className="pb-25">

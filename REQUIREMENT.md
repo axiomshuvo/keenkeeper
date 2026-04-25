@@ -87,11 +87,11 @@ Each friend object must have these fields:
 
 ### 5. 👤 Friend Details Page — Layout
 
-This page should have a **two-column layout** (follow the Figma design).
+This page should have a **two-column layout** (follow the Figma design). - done
 
-**Left Column — Friend Info Card:**
+**Left Column — Friend Info Card:** - done
 
-Show the following details:
+Show the following details: - done
 
 - Profile picture
 - Name
@@ -100,7 +100,7 @@ Show the following details:
 - Bio
 - Email
 
-Also add these **3 action buttons** (no functionality required for these buttons):
+Also add these **3 action buttons** (no functionality required for these buttons): - done
 
 | Button            |
 | ----------------- |
@@ -112,18 +112,18 @@ Also add these **3 action buttons** (no functionality required for these buttons
 
 **Right Column — 3 sections:**
 
-**① Stats Cards (show 3 cards):**
+**① Stats Cards (show 3 cards):** - done
 
 - Days Since Contact
 - Goal (in days)
 - Next Due Date
 
-**② Relationship Goal Card:**
+**② Relationship Goal Card:** - done
 
 - Show the current contact goal
 - Add an **Edit** button
 
-**③ Quick Check-In Card:**
+**③ Quick Check-In Card:** - done
 
 - Add 3 buttons with icons: **Call**, **Text**, **Video**
 - When clicked, each button adds a new entry to the **Timeline** (see Section 6)
@@ -166,13 +166,13 @@ This page shows the **history of all interactions** (calls, texts, video calls) 
 
 ### 8. 🦶 Footer
 
-- Design and add a footer section that matches the Figma design
+- Design and add a footer section that matches the Figma design - done
 
 ---
 
 ### 9. 📱 Responsive Design
 
-- The entire website must work correctly on **mobile, tablet, and desktop** screen sizes
+- The entire website must work correctly on **mobile, tablet, and desktop** screen sizes - done
 
 ---
 
