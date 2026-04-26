@@ -1,7 +1,7 @@
 "use client";
 import { useContext } from "react";
 
-import { Pie, PieChart, Tooltip } from "recharts";
+import { Legend, Pie, PieChart, Tooltip } from "recharts";
 import { FriendsContext } from "../context/FriendsContext";
 
 export default function Stats() {
@@ -33,12 +33,14 @@ export default function Stats() {
       nameKey="name"
       outerRadius="80%"
       innerRadius="60%"
+      paddingAngle={1}
+      cornerRadius="50%"
     />
   );
 
   return (
     <div className="container mx-auto p-20 min-h-screen ">
-      <h1 className="text-5xl font-bold text-teal-950 ">
+      <h1 className="text-5xl font-bold text-teal-950 text-center mb-10">
         Friendship Analytics
       </h1>
       {interaction.length === 0 ? (
@@ -50,6 +52,11 @@ export default function Stats() {
           <PieChart width={300} height={300}>
             <MyPie />
             <Tooltip />
+            <Legend
+              formatter={(value, entry) => {
+                return `${value} (${entry.payload.value})`;
+              }}
+            />
           </PieChart>
         </div>
       )}

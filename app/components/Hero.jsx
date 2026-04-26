@@ -1,9 +1,29 @@
-export default function Hero() {
+"use client";
+
+import { useContext } from "react";
+import { FriendsContext } from "../context/FriendsContext";
+
+export default function Hero({ keenKeeperFriends = [] }) {
+  const { interaction } = useContext(FriendsContext);
+
+  // Calculate stats
+  const totalFriends = keenKeeperFriends.length;
+
+  const onTrack = keenKeeperFriends.filter(
+    (f) => f.status === "on-track",
+  ).length;
+
+  const needAttention = keenKeeperFriends.filter(
+    (f) => f.status === "almost due" || f.status === "overdue",
+  ).length;
+
+  const interactionsThisMonth = interaction.length;
+
   return (
     <>
-      <div className="hero mt-20">
-        <div className="hero-content text-center">
-          <div className="max-w-3xl">
+      <div className="hero max-w-5xl mt-20 mb-10 mx-auto ">
+        <div className="hero-content w-full text-center">
+          <div className="w-full">
             <h1 className="text-5xl font-bold text-gray-800">
               Friends to keep close in your life
             </h1>
@@ -15,28 +35,28 @@ export default function Hero() {
               + Add a Friend
             </button>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-10">
-              <div className="stats flex flex-col items-center py-10 bg-base-100 rounded-lg shadow-md cursor-pointer ">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+              <div className=" flex flex-col items-center py-10 bg-base-100 rounded-lg shadow-md cursor-pointer ">
                 <h2 className="text-teal-800 text-3xl font-semibold mb-2.5">
-                  10
+                  {totalFriends}
                 </h2>
                 <p>Total Friends</p>
               </div>
-              <div className="stats flex flex-col items-center py-10  bg-base-100 rounded-lg shadow-md cursor-pointer">
+              <div className=" flex flex-col items-center py-10  bg-base-100 rounded-lg shadow-md cursor-pointer">
                 <h2 className="text-teal-800 text-3xl font-semibold mb-2.5">
-                  3
+                  {onTrack}
                 </h2>
                 <p>On Track</p>
               </div>
-              <div className="stats flex flex-col items-center py-10  bg-base-100 rounded-lg shadow-md cursor-pointer">
+              <div className=" flex flex-col items-center py-10  bg-base-100 rounded-lg shadow-md cursor-pointer">
                 <h2 className="text-teal-800 text-3xl font-semibold mb-2.5">
-                  6
+                  {needAttention}
                 </h2>
                 <p>Need Attention</p>
               </div>
-              <div className="stats flex flex-col items-center py-10  bg-base-100 rounded-lg shadow-md cursor-pointer">
+              <div className=" flex flex-col items-center py-10  bg-base-100 rounded-lg shadow-md cursor-pointer">
                 <h2 className="text-teal-800 text-3xl font-semibold mb-2.5">
-                  10
+                  {interactionsThisMonth}
                 </h2>
                 <p>Interactions This Month</p>
               </div>
