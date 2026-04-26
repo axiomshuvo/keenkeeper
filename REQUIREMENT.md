@@ -191,20 +191,20 @@ This page shows the **history of all interactions** (calls, texts, video calls) 
 
 ---
 
-### C1. 📊 Friendship Analytics Page (Stats Page)
+### C1. 📊 Friendship Analytics Page (Stats Page) - done
 
 - The page must have a **"Friendship Analytics"** heading at the top
 - Add a **Pie Chart** (using Recharts) showing the count of **Call / Text / Video** interactions — match the Figma layout
 
 ---
 
-### C2. 🔍 Timeline Filter
+### C2. 🔍 Timeline Filter - done
 
 - Add **filter options** on the Timeline page so users can filter entries by: **Call**, **Text**, or **Video** - done
 
 ---
 
-### C3. 📄 GitHub README
+### C3. 📄 GitHub README - done
 
 Add a well-designed `README.md` to your GitHub repository that includes:
 
@@ -224,7 +224,7 @@ These are not required but will make your project stand out:
 
 ---
 
-## 🛠️ Technologies to Use
+## 🛠️ Technologies to Use - done
 
 | Technology                               | Purpose                    |
 | ---------------------------------------- | -------------------------- |
@@ -235,7 +235,7 @@ These are not required but will make your project stand out:
 
 ---
 
-## 🚀 Deployment
+## 🚀 Deployment - done
 
 Deploy your project on **Vercel**, **Netlify**, **Cloudflare Pages**, or anywhere else before submitting.
 

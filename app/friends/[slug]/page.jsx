@@ -1,6 +1,7 @@
 import QuickCheckIn from "@/app/components/QuickCheckIn";
 import Image from "next/image";
 import bellIcon from "../../../assets/bell-icon.png";
+import NotFound from "./not-found";
 
 export default async function FriendDetailsPage({ params }) {
   const { slug } = await params;
@@ -14,7 +15,7 @@ export default async function FriendDetailsPage({ params }) {
   // console.log("Friend details:", friend);
 
   if (!friend) {
-    return <div>Friend not found</div>;
+    return <NotFound />;
   }
 
   const formattedNextDueDate = new Intl.DateTimeFormat("en-US", {
