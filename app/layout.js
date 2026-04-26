@@ -1,6 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import { Toaster } from "react-hot-toast";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import { FriendsProvider } from "./context/FriendsContext";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -27,9 +29,12 @@ export default function RootLayout({ children }) {
       data-theme="light"
     >
       <body suppressHydrationWarning className="min-h-full flex flex-col">
-        <Navbar />
-        {children}
-        <Footer />
+        <FriendsProvider>
+          <Navbar />
+          {children}
+          <Footer />
+          <Toaster position="top-right" />
+        </FriendsProvider>
       </body>
     </html>
   );
