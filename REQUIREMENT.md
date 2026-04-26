@@ -200,7 +200,7 @@ This page shows the **history of all interactions** (calls, texts, video calls) 
 
 ### C2. 🔍 Timeline Filter
 
-- Add **filter options** on the Timeline page so users can filter entries by: **Call**, **Text**, or **Video**
+- Add **filter options** on the Timeline page so users can filter entries by: **Call**, **Text**, or **Video** - done
 
 ---
 

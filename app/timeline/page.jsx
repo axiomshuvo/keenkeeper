@@ -8,6 +8,7 @@ import { FriendsContext } from "../context/FriendsContext";
 
 export default function Timeline() {
   const { interaction } = useContext(FriendsContext);
+  console.log(interaction);
 
   const iconType = (interaction) => {
     if (interaction.type === "call") return callIcon;
@@ -53,7 +54,7 @@ export default function Timeline() {
         ) : (
           filteredInteractions.map((item) => (
             <div
-              key={item.id}
+              key={item.friendId + item.createdAt}
               className=" bg-base-100 shadow-xl flex flex-row items-center p-4 rounded-xl"
             >
               <Image
