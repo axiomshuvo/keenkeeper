@@ -132,7 +132,7 @@ Also add these **3 action buttons** (no functionality required for these buttons
 
 ### 6. ⚡ Friend Details Page — Button Functionality
 
-When a user clicks **Call**, **Text**, or **Video** in the Quick Check-In Card:
+When a user clicks **Call**, **Text**, or **Video** in the Quick Check-In Card: - Done
 
 ✅ A **new timeline entry** is automatically added with:
 
@@ -142,7 +142,7 @@ When a user clicks **Call**, **Text**, or **Video** in the Quick Check-In Card:
   - "Text with Alex Johnson"
   - "Video with Alex Johnson"
 
-✅ A **toast notification** must appear when any of these buttons is clicked.
+✅ A **toast notification** must appear when any of these buttons is clicked. - done
 
 ---
 
@@ -152,9 +152,9 @@ This page shows the **history of all interactions** (calls, texts, video calls) 
 
 **This page must have:**
 
-- A **"Timeline"** heading at the top
-- Timeline entries displayed following the Figma design
-- Each entry must show:
+- A **"Timeline"** heading at the top - done
+- Timeline entries displayed following the Figma design - done
+- Each entry must show: - done
 
 | Field    | Details                                   |
 | -------- | ----------------------------------------- |

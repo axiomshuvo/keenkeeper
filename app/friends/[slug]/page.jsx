@@ -4,14 +4,14 @@ import bellIcon from "../../../assets/bell-icon.png";
 
 export default async function FriendDetailsPage({ params }) {
   const { slug } = await params;
-  console.log("Friend slug:", slug);
+  // console.log("Friend slug:", slug);
 
   const res = await fetch(
     `${process.env.NEXT_PUBLIC_SITE_URL}/data/friends.json`,
   );
   const friends = await res.json();
   const friend = friends.find((f) => f.id === parseInt(slug));
-  console.log("Friend details:", friend);
+  // console.log("Friend details:", friend);
 
   if (!friend) {
     return <div>Friend not found</div>;
@@ -37,10 +37,10 @@ export default async function FriendDetailsPage({ params }) {
                 height={100}
               />
               <h2 className="text-3xl font-bold">{friend.name}</h2>
-              <div className="">
+              <div>
                 <span className="badge badge-info"> {friend.status} </span>
               </div>
-              <div className="">
+              <div className="flex gap-2">
                 {friend.tags.map((tag, index) => (
                   <span key={index} className="badge badge-primary">
                     {tag}
@@ -91,7 +91,7 @@ export default async function FriendDetailsPage({ params }) {
               <span className="text-bold">{friend.goal} days</span>
             </p>
           </div>
-          <QuickCheckIn />
+          <QuickCheckIn friend={friend} />
         </div>
       </div>
     </div>
